@@ -31,7 +31,7 @@ fs2.write('set member ')
 
 #Navegando por todas as linhas do arquivo
 for line in f:
-    conteudo = f.readline()
+    conteudo = f.read()
     fs1 = open(script1, 'a')
     fs1.write('edit SEPRO_' + conteudo)
     fs1.write('set subnet ' + conteudo.rstrip('\n') + '/32\n')
